@@ -1,0 +1,78 @@
+:root {
+	--primary: #938250;
+	--bg: rgba(255,255,255,0.3);
+}
+
+.container {
+	margin: 50px 0;
+	padding: 20px;
+}
+
+.content {
+	background: var(--bg);
+	border-radius: 10px;
+	box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-around;
+	margin-top: 3rem;
+	padding: 50px;
+}
+
+.list {
+	list-style-type: none;
+}
+
+.listItem {
+	border-bottom: 1px dotted #333;
+	padding: 20px;
+}
+
+.icon {
+	height: 30px;
+	width: 30px;
+	margin-bottom: -10px;
+	margin-right: 10px;
+}
+
+.visit {
+	display:			flex;
+	justify-content:	space-between; 
+	flex-flow:			row wrap;
+	align-items:		center;
+	margin-top:			3rem;
+}
+
+.visitLeft {
+	background:			 #333;
+	border-radius: 		 10px;
+	color: 				 #f4e484;
+	line-height:		 2.5rem;
+	padding: 			 20px;
+	width: 40%;
+}
+
+.visitRight {
+	margin-left: 30px;
+	width: 55%;
+}
+
+.visitRight h3 {
+	margin-top: 10px;
+}
+
+.arrow {
+	margin-bottom: -5px;
+}
+
+@media screen and (min-width: 768px) {
+
+}
+
+@media screen and (min-width: 460px) {
+	.list { margin-bottom: 60px; }
+	.content { padding-bottom: 0px; }
+	.visitLeft, .visitRight { flex-grow: 1; padding-bottom: 5px; }
+	.visitRight { margin-top: 20px; }
+	
+}

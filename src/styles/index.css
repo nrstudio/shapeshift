@@ -1,0 +1,197 @@
+@import url("https://use.typekit.net/mdd1wjt.css");
+
+*	{
+	margin: 0; padding: 0; box-sizing: border-box;
+}
+
+body {
+	font-family: tenon, Helvetica, Sans-serif;
+	background: #f4e484;
+	color: #333;
+	line-height: 1.4rem;
+}
+
+h1 {
+	font-size: 4rem;
+	font-family: house-of-cards, Helvetica, Sans-serif;
+	text-align: center;
+	
+}
+
+h2 {
+	font-family: house-of-cards, Helvetica, Sans-serif;
+	font-size: 2rem;
+	margin-bottom: 1rem;
+	text-align: center;
+}
+
+.header {
+	background: white;
+	color: #444;
+	padding: 2em;
+	display: flex;
+	justify-content: space-around;
+	flex-flow: row nowrap;
+}
+
+.head-wrap {
+	max-width: 800px;
+	display: flex;
+	justify-content: space-between;
+	flex-flow: row nowrap;
+	align-items: center;
+}
+
+.header-logo {
+	width: 75px;
+	height: 75px;
+}
+
+.topnav {
+	display: flex;
+	flex-flow: row nowrap;
+	font-family: house-of-cards, Helvetica, Sans-serif;
+	font-size: 1.3em;
+	list-style-type: none;
+	margin-left: .5rem;
+}
+
+.nav-item {
+	margin: 1em;
+	flex-grow: 1;
+}
+
+.nav-title {
+	font-size: 2em;
+	text-transform: uppercase;
+	margin-bottom: .1em;
+	margin-right: 2rem;
+}
+
+.container {
+	max-width: 900px;
+	margin: 1rem auto;
+}
+
+.intro-container {
+	text-align: center;
+	margin: 2.5rem;
+
+}
+
+.intro-title {
+	color: #f4e484;
+	letter-spacing: 5px;
+	text-transform: uppercase;
+	font-size: 4.5rem;
+	mix-blend-mode: exclusion;
+	display: inline;
+	position: relative;
+	top: 350px;
+}
+
+.taproom-pic {
+	border-radius: 20px;
+	box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+	margin-top: 20px;
+	width: 100%;
+}
+
+.taproom-crop {
+	display: none;
+}
+
+.section-title {
+	font-size: 4rem;
+	text-align: center;
+}
+
+.beer-list {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-around;
+	margin-top: 3rem;
+}
+
+.beer-item {
+	text-align: center;
+	border-radius: 10px;
+	background: rgba(255,255,255,0.3);
+	padding: 1rem;
+	margin: .5rem;
+	box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.beer-item img {
+	max-width: 250px;
+}
+
+/* Begin CSS for Card Flippin */
+.card-flip {
+    -webkit-perspective: 1000px;
+    perspective: 1000px;
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    display: block;
+    width: 250px;
+    height: 250px;
+    cursor: pointer;
+    margin-bottom: 1rem;
+
+}
+
+.card {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    -webkit-transition: all 600ms;
+    transition: all 600ms;
+    z-index: 20;
+}
+
+    .card div {
+        position: absolute;
+        height: 100%;
+        width: 100%;
+ 		border-radius: 10px;
+        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
+        border-radius: 2px;
+    }
+
+ .card .back {
+        color: #ccc;
+        background: #333;
+        -webkit-transform: rotateY(180deg);
+        transform: rotateY(180deg);
+        text-align: left;
+        padding: 1rem;
+    }
+
+:checked + .card {
+    transform: rotateY(180deg);
+    -webkit-transform: rotateY(180deg);
+}
+
+input[type="checkbox"] {
+  display: none;
+}
+
+@media screen and (max-width: 540px) {
+	.taproom-pic { display: none; }
+	.taproom-crop { display: block; width: 100%; border-radius: 10px; }
+	.nav-title { display: none; }
+	.header { padding: 1rem; }
+}
+
+@media only screen and (max-width: 600px) {
+	.header {
+		display: none;
+	}
+}
+
+@media screen and (max-width: 814px) {
+	.nav-title { line-height: 30px; }
+}

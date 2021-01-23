@@ -1,0 +1,50 @@
+:root {
+	--primary: #938250;
+}
+
+.footer {
+	margin-top: 50px;
+	padding: 20px;
+	background: white;
+	text-align: center;
+}
+
+.container {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-around;
+	align-items: center;
+	margin-bottom: 50px;
+}
+
+.logo {
+	height: 200px;
+	width: 200px;
+}
+
+.footerCol {
+	padding: 20px;
+	// border: 1px solid black;
+	
+	text-align: center;
+	flex-grow: 1;
+}
+
+.nav {
+	list-style-type: none;
+	line-height: 36px;
+}
+
+.hours {
+	margin-top: 10px;
+	list-style-type: none;
+	color: var(--primary);
+}
+
+// @media screen and (min-width: 768px) {
+
+// }
+
+// @media screen and (min-width: 460px) {
+// 	.
+// }
