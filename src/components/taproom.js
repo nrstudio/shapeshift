@@ -1,10 +1,8 @@
 import React from 'react';
-import ReactDom from 'react-dom';
 import tapStyle from '../styles/tap.module.scss';
-
-import logo from '../img/logo-800.png'; import phobos from '../img/phobos.gif';
 import camp from '../img/camp.gif'; import bloom from '../img/bloom.gif';
 import hex from '../img/hex.gif'; import into from '../img/into.gif';
+import phobos from '../img/phobos.gif';
 import { GiSodaCan } from 'react-icons/gi';
 import { GiBeerBottle } from 'react-icons/gi';
 import { IoMdArrowRoundForward } from 'react-icons/io';

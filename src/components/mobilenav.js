@@ -1,5 +1,4 @@
-import React, { useState, Link } from 'react';
-import ReactDOM from 'react-dom';
+import React, { useState } from 'react';
 import styled from "styled-components"
 import logoIcon from '../img/logo-100.png';
 import logo from '../img/logo-800.png';
@@ -25,8 +24,8 @@ const MobileNav = () => {
 					<li><h2><a href="/beer">Beer List</a></h2></li>
 					<li><h2><a href="/about">About</a></h2></li>
 					<li><h2><a href="/findus">Find Us</a></h2></li>
-					<li><a href="#"><FaFacebook className="social"/></a>
-						<a href="#"><FaInstagram className="social"/></a></li>
+					<li><button className="social-btn"><FaFacebook className="social"/></button>
+						<button className="social-btn"><FaInstagram className="social"/></button></li>
 				</ul>
 				<p>123 Hops Court</p>
 				<p>New Haven, CT 06515</p>

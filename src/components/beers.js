@@ -1,5 +1,4 @@
 import React from 'react'
-import ReactDOM from 'react-dom'
 import { beerdata } from '../data/beerdata.js'
 
 function Beers() {

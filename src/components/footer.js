@@ -1,5 +1,4 @@
 import React from 'react';
-import ReactDom from 'react-dom';
 import logo from '../img/logo-800.png';
 import { FaFacebook, FaInstagram } from 'react-icons/fa'
 import footerStyle from '../styles/footer.module.scss';
@@ -15,8 +14,8 @@ const Footer = (props) => {
 						<a href="/about"><li>About</li></a>
 						<a href="/findus"><li>Find Us</li></a>
 					</ul>
-					<a href="#"><FaFacebook className={footerStyle.social}/></a>
-					<a href="#"><FaInstagram className={footerStyle.social}/></a>
+					<button className="social-btn"><FaFacebook className="social"/></button>
+				<button className="social-btn"><FaInstagram className="social"/></button>
 				</article>
 				<article className={footerStyle.footerCol}>
 					<a href="/"><img src={logo} alt="Shapeshift Logo" className={footerStyle.logo}/></a>

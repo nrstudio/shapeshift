@@ -1,5 +1,4 @@
 import React from 'react'
-import ReactDOM from 'react-dom'
 import { storedata } from '../data/storedata.js'
 import { bardata } from '../data/bardata.js'
 

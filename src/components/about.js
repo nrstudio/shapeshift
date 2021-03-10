@@ -1,5 +1,4 @@
 import React from 'react'
-import ReactDOM from 'react-dom'
 import pic from '../img/about.jpg'
 import picCrop from '../img/about-crop.jpg'
 import { HiOutlineMail, HiOutlinePhone } from 'react-icons/hi'
@@ -9,8 +8,8 @@ const About = () => {
 	return (
 		<>
 			<h1 className="section-header">About Shapeshift</h1>
-			<img src={pic} className="about-pic"/>
-			<img src={picCrop} className="about-crop"/>
+			<img src={pic} alt="Beer Pour" className="about-pic"/>
+			<img src={picCrop} alt="Beer Pour" className="about-crop"/>
 			<section className="beer-list">
 				<article className="about">
 					Shapeshift Brewing is really just a passion project

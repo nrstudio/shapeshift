@@ -64,7 +64,7 @@ h2 {
 }
 
 .head-wrap {
-	max-width: 820px;
+	max-width: 850px;
 	display: flex;
 	justify-content: space-between;
 	flex-flow: row nowrap;
@@ -75,6 +75,12 @@ h2 {
 	width: 250;
 	height: 40px;
 	margin-right: 20px;
+	opacity: 1.0;
+	transition: opacity 1s;
+}
+
+.header-type:hover { 
+	opacity: 0.3;
 }
 
 .header-logo {
@@ -104,9 +110,21 @@ h2 {
 }
 
 .social {
-	height: 25px;
-	height: 25px;
-	margin: 10px;
+	height: 20px;
+	width: 20px;
+	margin: 15px;
+}
+
+.social-btn {
+	border: 0;
+	background: none;
+	padding: 0;
+	color: #333333;
+	transition: color 1s;
+}
+
+.social-btn:hover {
+	color: #DECB7A;
 }
 
 .container {
