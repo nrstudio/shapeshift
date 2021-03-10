@@ -1,17 +1,43 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import ReactDom from 'react-dom';
+import {
+  		BrowserRouter as Router,
+  		Switch,
+  		Route,
+  		Link
+	} from "react-router-dom";
+import Header from './components/header';
+import Intro from './components/intro';
+import Taproom from './components/taproom';
+import Beers from  './components/beers';
+import About from './components/about';
+import FindUs from './components/findus';
+import Footer from './components/footer';
+import './styles/index.css';
 
-ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root')
-);
+function App() {
+	return (
+		<Router>
+			<Header title="Shapeshift Brewing"/>
+				<section className="container">
+					
+						<Route exact path="/" component={Intro} />
+							
+						<Route path="/taproom" component={Taproom}/>
+							
+						<Route path="/beers" component={Beers}/>
+					
+						<Route path="/about" component={About}/>
+					
+						<Route path="/findus" component={FindUs}/>
+						
+				</section>
+			<Footer title="Shapeshift Brewing"/>
+		</Router>
+	);
+}
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+ReactDom.render(
+	<App />,
+	document.getElementById('root')
+	);
