@@ -9,7 +9,7 @@ const DesktopNav = () => {
 		<section className="header">
 			<div className="head-wrap">
 				<Link to="/"><img src={logoType} className="header-type" alt="SHAPESHIFT BREWING"/></Link>
-				<a href="/"><img src={logoIcon} className="header-logo" alt="Logo Mark"/></a>
+				<Link to="/"><img src={logoIcon} className="header-logo" alt="Logo Mark"/></Link>
 				<ul className="topnav">
 					<Link to="/taproom"><li className="nav-item">In The Taproom</li></Link>
 					<Link to="/beers"><li className="nav-item">Beer List</li></Link>

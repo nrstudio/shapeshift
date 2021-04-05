@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 import styled from "styled-components"
 import logoIcon from '../img/logo-100.png';
 import logo from '../img/logo-800.png';
@@ -18,12 +19,12 @@ const MobileNav = () => {
 				</MenuIcon>
 			</MenuIconContainer>
 			<MenuLinks openMenu={openMenu}>
-				<a href="/"><img src={logo} alt="Shapeshift Brewing" className="logo" /></a>
+				<Link to="/"><img src={logo} alt="Shapeshift Brewing" className="logo" /></Link>
 				<ul>
-					<li><h2><a href="/taproom">In The Taproom</a></h2></li>
-					<li><h2><a href="/beer">Beer List</a></h2></li>
-					<li><h2><a href="/about">About</a></h2></li>
-					<li><h2><a href="/findus">Find Us</a></h2></li>
+					<li><h2><Link onClick={ () => setOpenMenu(!openMenu)} to="/taproom">In The Taproom</Link></h2></li>
+					<li><h2><Link onClick={ () => setOpenMenu(!openMenu)} to="/beers">Beer List</Link></h2></li>
+					<li><h2><Link onClick={ () => setOpenMenu(!openMenu)} to="/about">About</Link></h2></li>
+					<li><h2><Link onClick={ () => setOpenMenu(!openMenu)} to="/findus">Find Us</Link></h2></li>
 					<li><button className="social-btn"><FaFacebook className="social"/></button>
 						<button className="social-btn"><FaInstagram className="social"/></button></li>
 				</ul>
